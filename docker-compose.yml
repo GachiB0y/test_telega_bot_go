@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  bot:
+    build: .
+   
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code
+volumes:
+  bot:
+
+ 
+  #   depends_on:
+  #     - redis_hr
+  #     - hr_postgres-test
+  #   build:
+  #     context: .
+  #     dockerfile: ./app/Dockerfile
+  #   # image: hr_grass_v1
+  #   ports:
+  #     - "8000:8000"
+  #   volumes:
+  #     - ./files:/app/files
+  #     - /home/admin01/1c_file_storage:/app/1c_file_storage
